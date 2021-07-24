@@ -1,6 +1,15 @@
 const inquirer = require("inquirer")
 const http = require("http")
 
+// colors
+const RED = "\x1b[31m"
+const GREEN = "\x1b[32m"
+const RESET = "\x1b[0m"
+
+// emojis
+const GREEN_CHECK_MARK = "\u2705"
+const RED_CROSS_MARK = "\u274C"
+
 const shorten = (url, aliasType, slug) => {
 	const options = {
 		hostname: "localhost",
@@ -21,10 +30,10 @@ const shorten = (url, aliasType, slug) => {
 			let message = jsonResp["message"]
 
 			if (!ok) {
-				console.log(`\x1b[31m An error occured: ${message} \x1b[0m`) // * red color for failure
+				console.log(`${RED_CROSS_MARK} ${RED}An error occured: ${message}${RESET}`) // * red color for failure
 			}
 			else {
-				console.log(`\x1b[32m Here's your shortened URL: ${message} \x1b[0m`) // * green color for success
+				console.log(`${GREEN_CHECK_MARK} ${GREEN}Here's your shortened URL: ${message}${RESET}`) // * green color for success
 			}
 		})
 	})
