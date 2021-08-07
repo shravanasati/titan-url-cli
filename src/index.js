@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // imports
 const inquirer = require("inquirer")
 const request = require("request")

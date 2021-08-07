@@ -1,8 +1,9 @@
 {
   "name": "titan-url-cli",
   "version": "1.0.0",
-  "description": "Create and manage your titan urls from the terminal.",
+  "description": "A terminal client for titan-url.",
   "main": "src/index.js",
+  "bin": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
@@ -13,7 +14,7 @@
   "keywords": [
     "shorten",
     "urls",
-    "urls",
+    "url shortener",
     "titan-url"
   ],
   "author": "Shravan Asati",
