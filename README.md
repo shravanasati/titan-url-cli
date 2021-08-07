@@ -1,5 +1,7 @@
 # titan-url-cli
 
+![demo](demo.png)
+
 titan-url-cli is the terminal client for [titan-url](http://titan-url.herokuapp.com).
 
 ## Related repositories
